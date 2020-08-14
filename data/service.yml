@@ -1,0 +1,48 @@
+enable: true
+title: Our Services
+subtitle: >
+  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics
+content:
+
+  - icon: ion-coffee
+    name: Branding
+    text: >
+      We deliver meaningful and valued strategies that help organisations’ connect their purpose to who they are and what they do, everyday.
+
+  - icon: ion-compass
+    name: Web Design
+    text: >
+      Whether you need a new website, or you want to improve an existing one, we approach each of our projects with a passion for innovation and imagination.
+
+  - icon: ion-image
+    name: App Design
+    text: >
+
+      We're an app development agency that turns your customers into fans. Every tap, swipe and pinch is meticulously crafted to ensure app success.
+
+  - icon: ion-bug
+    name: Start Up
+    text: >
+      Unlock startup success - Through our accelerator programs and corporate partners, unlock the best possible opportunity to succeed.
+
+  - icon: ion-headphone
+    name: Logo Design
+    text: >
+      Your branding and company logo design is the face of your business, and as such you need to ensure that you work with reputable logo designers.
+
+  - icon: ion-leaf
+    name: Development
+    text: >
+      Whether you’re looking for a standalone team or add to your existing capabilities we can add value when it comes to building custom software.
+
+
+  - icon: ion-planet
+    name: Brand Identity
+    text: >
+      Brand identity helps people to remember who you are, and promotes what we call 'brand recognition'.
+
+
+  - icon: ion-earth
+    name: Brand Identity
+    text: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
