@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+cd /Users/davidcruwys/dev/sites/ideasmen.com.au
+#ls -lsa
+#pwd
+
+if git rev-parse --git-dir > /dev/null 2>&1; then
+  : # This is a valid git repository (but the current working
+    # directory may not be the top level.
+    # Check the output of the git rev-parse command if you care)
+else
+
+  echo 'create git repository on github for: ideasmen.com.au';
+
+  # This command needs to be moved into the client
+  # NOW in client
+  # curl -u 'klueless-io' https://api.github.com/user/repos -d "{\"name\":\"ideasmen.com.au\"}"
+
+  echo 'initializing git repository';
+  git init
+
+  git add .
+
+  git commit -am "first commit";
+
+  echo 'setup git flow';
+  git flow init -d
+  
+  git checkout master
+
+  echo 'setup first hotfix version';
+
+  # Turn off message dialog
+  export GIT_MERGE_AUTOEDIT=no
+
+  git flow hotfix start v0.00.001
+  echo '0.00.001' > kversion
+  git flow hotfix finish v0.00.001 -m 'version 0.00.001'
+
+  unset GIT_MERGE_AUTOEDIT
+
+  git checkout master
+
+  git remote add origin git@github.com:klueless-io/ideasmen.com.au.git
+  git remote -v
+  git push -u origin master
+
+  git checkout develop
+  git push --set-upstream origin develop
+
+  git checkout master
+
+fi

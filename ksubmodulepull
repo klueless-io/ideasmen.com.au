@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /Users/davidcruwys/dev/sites/ideasmen.com.au
+
+git submodule foreach git pull
